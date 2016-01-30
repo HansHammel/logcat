@@ -2,18 +2,24 @@
   "name": "logcat",
   "author": "Spirin Vladimir <spirin.vladimir@gmail.com>",
   "dependencies": {
+    "bootstrap": "^3.3.6",
+    "coffee-script": "*",
     "colors": "*",
-    "express.io": "*"
+    "connect": "*",
+    "express.io": "*",
+    "install": "^0.4.1",
+    "jquery": "^2.2.0",
+    "npm": "^3.6.0"
   },
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "test": "mocha test/app.js"
   },
   "description": "",
   "devDependencies": {
-    "supertest": "~0.5.1",
-    "should": "~1.2.2",
-    "mocha": "^2.1.0"
+    "supertest": "*",
+    "should": "*",
+    "mocha": "*"
   },
   "repository": {
     "type": "git",
