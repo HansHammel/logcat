@@ -11,24 +11,24 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "coffee-script": "*",
-    "colors": "*",
-    "connect": "*",
-    "express.io": "*",
+    "coffee-script": "^1.10.0",
+    "colors": "^1.1.2",
+    "connect": "^3.4.1",
+    "express.io": "^1.1.13",
     "install": "^0.4.1",
     "jquery": "^2.2.0",
-    "npm": "^3.6.0",
-    "open": "0.0.5",
+    "npm": "^3.7.1",
+    "open": "^0.0.5",
     "which": "^1.2.4"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "test": "mocha test/app.js"
   },
   "devDependencies": {
-    "supertest": "*",
-    "should": "*",
-    "mocha": "*"
+    "mocha": "^2.4.5",
+    "should": "^8.2.1",
+    "supertest": "^1.1.0"
   },
   "bin": {
     "logcat": "./bin/logcat.js"
