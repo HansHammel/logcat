@@ -134,7 +134,6 @@ logcat.stdout.on('data', function (data) {
 
 var server = app.listen(3000);
 if (!module.parent) {
-    console.log(server.address());
     console.log('Express listening on http://localhost:3000');
     console.log('visit http://localhost:3000 to see your filtred adb logs');
     open('http://localhost:3000');
