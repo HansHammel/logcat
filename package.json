@@ -1,6 +1,14 @@
 {
   "name": "logcat",
-  "author": "Spirin Vladimir <spirin.vladimir@gmail.com>",
+  "description": "Log the prefiltered debugging output of an android device (adb logcat output) to browser using a twwitter bootstrap based web interface",
+  "author": {
+    "name": "Oliver Bleckmann",
+    "url": "https://github.com/HansHammel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/HansHammel/logcat.git"
+  },
   "dependencies": {
     "bootstrap": "^3.3.6",
     "coffee-script": "*",
@@ -9,30 +17,32 @@
     "express.io": "*",
     "install": "^0.4.1",
     "jquery": "^2.2.0",
-    "npm": "^3.6.0"
+    "npm": "^3.6.0",
+    "open": "0.0.5",
+    "which": "^1.2.4"
   },
-  "version": "0.0.8",
+  "version": "0.1.0",
   "scripts": {
     "test": "mocha test/app.js"
   },
-  "description": "",
   "devDependencies": {
     "supertest": "*",
     "should": "*",
     "mocha": "*"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/spirinvladimir/logcat.git"
-  },
   "bin": {
-    "logcat": "./bin/logcat"
+    "logcat": "./bin/logcat.js"
   },
   "keywords": [
     "adb",
     "logcat",
-    "viewer"
+    "viewer",
+    "log",
+    "debug",
+    "gui",
+    "ui",
+    "web",
+    "android"
   ],
-  "license": "BSD",
-  "gitHead": "c61ed2f62335192a6a9fe3504da90d4c644b7d03"
+  "license": "BSD"
 }
