@@ -1,5 +1,5 @@
 {
-  "name": "logcat",
+  "name": "logcat-browser",
   "description": "Log the prefiltered debugging output of an android device (adb logcat output) to browser using a twwitter bootstrap based web interface",
   "author": {
     "name": "Oliver Bleckmann",
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/HansHammel/logcat.git"
+    "url": "git://github.com/HansHammel/logcat-browser.git"
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
@@ -39,10 +39,14 @@
     "viewer",
     "log",
     "debug",
+    "debugger",
+    "interface",
     "gui",
     "ui",
     "web",
-    "android"
+    "android",
+    "browser",
+    "web"
   ],
   "license": "MIT"
 }
