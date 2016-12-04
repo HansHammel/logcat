@@ -120,14 +120,16 @@ logcat.stdout.on('data', function (data) {
  */
 
 
-var server = app.listen(3000);
+
 if (!module.parent) {
-    console.log('Express listening on http://localhost:3000');
-    console.log('visit http://localhost:3000 to see your filtred adb logs');
-    open('http://localhost:3000');
+    var server = app.listen(3000, function(){
+        console.log('Express listening on http://localhost:3000');
+        console.log('visit http://localhost:3000 to see your filtred adb logs');
+        open('http://localhost:3000');
+    });
 } else {
     //for our tests
-    module.exports = server;
+    module.exports = app;
 }
 
 
