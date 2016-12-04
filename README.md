@@ -2,8 +2,6 @@
 
  Monitor android
 
-[![Dependency Status](https://gemnasium.com/HansHammel/logcat-browser.png)](https://gemnasium.com/HansHammel/logcat-browser)
-
 ## How to start using:
 
  install:
