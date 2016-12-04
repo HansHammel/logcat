@@ -10,7 +10,7 @@
 
  use
 
-    $ logcat
+    $ logcat-browser
 
 ## Screen shots:
 

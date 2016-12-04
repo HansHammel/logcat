@@ -9,29 +9,28 @@
     "type": "git",
     "url": "git://github.com/HansHammel/logcat-browser.git"
   },
+  "main": "index.js",
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "coffee-script": "^1.10.0",
+    "bootstrap": "^3.3.7",
     "colors": "^1.1.2",
-    "connect": "^3.4.1",
-    "express.io": "^1.1.13",
-    "install": "^0.4.1",
-    "jquery": "^2.2.0",
-    "npm": "^3.7.1",
+    "express": "^4.14.0",
+    "express.oi": "0.0.21",
+    "jquery": "^3.1.1",
     "open": "^0.0.5",
-    "which": "^1.2.4"
+    "which": "^1.2.12"
   },
-  "version": "0.1.1",
+  "version": "0.2.0",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha test/app.js"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "should": "^8.2.1",
-    "supertest": "^1.1.0"
+    "mocha": "^3.2.0",
+    "should": "^11.1.1",
+    "supertest": "^2.0.1"
   },
   "bin": {
-    "logcat": "./bin/logcat.js"
+    "logcat-browser": "./bin/logcat-browser.js"
   },
   "keywords": [
     "adb",

@@ -2,6 +2,7 @@ var request = require('supertest'),
     should = require('should'),
     app = require('../index.js');
     
+//noinspection NodeModulesDependencies
 describe('Response html with 200', function () {
     it('should be responded as html', function (done) {
         request(app)
