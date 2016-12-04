@@ -16,11 +16,11 @@
 
  In console:
 
-[ ![alt](https://raw.github.com/HansHammel/logcat-browser/master/screenshot/console-128x128.png) ](https://raw.github.com/HansHammel/logcat-browser/master/screenshot/console.png)
+[ ![alt](screenshot/console-128x128.png) ](screenshot/console.png)
 
  In browser, open <http://localhost>:
 
-[ ![alt](https://raw.github.com/HansHammel/logcat-browser/master/screenshot/web-128x128.png) ](https://raw.github.com/HansHammel/logcat-browser/master/screenshot/web.png)
+[ ![alt](screenshot/web-128x128.png) ](screenshot/web.png)
 
 ## You can edit app.js:
 
