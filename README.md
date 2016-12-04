@@ -2,13 +2,13 @@
 
  Monitor android
 
-[![Dependency Status](https://gemnasium.com/spirinvladimir/logcat.png)](https://gemnasium.com/spirinvladimir/logcat)
+[![Dependency Status](https://gemnasium.com/HansHammel/logcat-browser.png)](https://gemnasium.com/HansHammel/logcat-browser)
 
 ## How to start using:
 
  install:
 
-    $ npm install -g logcat
+    $ npm install -g logcat-browser
 
  use
 
@@ -18,11 +18,11 @@
 
  In console:
 
-[ ![alt](https://raw.github.com/spirinvladimir/logcat/master/public/img/console-128x128.png) ](https://raw.github.com/spirinvladimir/logcat/master/public/img/console.png)
+[ ![alt](https://raw.github.com/HansHammel/logcat-browser/master/public/img/console-128x128.png) ](https://raw.github.com/HansHammel/logcat-browser/master/public/img/console.png)
 
  In browser, open <http://localhost>:
 
-[ ![alt](https://raw.github.com/spirinvladimir/logcat/master/public/img/web-128x128.png) ](https://raw.github.com/spirinvladimir/logcat/master/public/img/web.png)
+[ ![alt](https://raw.github.com/HansHammel/logcat-browser/master/public/img/web-128x128.png) ](https://raw.github.com/HansHammel/logcat-browser/master/public/img/web.png)
 
 ## You can edit app.js:
 
@@ -102,7 +102,7 @@ app.listen(80);
 ```html
 <html>
 	<head>
-		<title>logcat</title>
+		<title>logcat-browser</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<script src="js/jquery-1.9.1.min.js"></script>
@@ -131,7 +131,3 @@ app.listen(80);
 </html>
 ```
 
-Author: [Spirin Vladimir](https://github.com/spirinvladimir) [![Spirin Vladimir][gratipay-image]][gratipay-url]
-
-[gratipay-image]: https://img.shields.io/gratipay/spirinvladimir.svg?style=flat
-[gratipay-url]: https://gratipay.com/spirinvladimir/
