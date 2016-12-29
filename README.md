@@ -1,6 +1,21 @@
 ## Description:
 
  Monitor android
+ 
+[![NPM](https://nodei.co/npm/logcat-browser.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/logcat-browser/) 
+[![NPM](https://nodei.co/npm-dl/logcat-browser.png?months=9&height=3)](https://nodei.co/npm/logcat-browser/)
+
+[![npm version](https://img.shields.io/npm/v/logcat-browser.svg)](https://www.npmjs.com/package/logcat-browser)
+[![npm license](https://img.shields.io/npm/l/logcat-browser.svg)](https://www.npmjs.com/package/logcat-browser)
+[![npm download](https://img.shields.io/npm/dm/logcat-browser.svg)](https://www.npmjs.com/package/logcat-browser)
+[![npm download](https://img.shields.io/npm/dt/logcat-browser.svg)](https://www.npmjs.com/package/logcat-browser)
+[![Package Quality](http://npm.packagequality.com/shield/logcat-browser.svg)](http://packagequality.com/#?package=logcat-browser)
+[![Inline docs](http://inch-ci.org/github/HansHammel/logcat-browser.svg?branch=master)](http://inch-ci.org/github/HansHammel/logcat-browser)
+
+[![david dependency](https://img.shields.io/david/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
+[![david devDependency](https://img.shields.io/david/dev/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
+[![david optionalDependency](https://img.shields.io/david/optional/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
+[![david peerDependency](https://img.shields.io/david/peer/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
 
 ## How to start using:
 
