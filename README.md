@@ -18,6 +18,8 @@
 [![david devDependency](https://img.shields.io/david/dev/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
 [![david optionalDependency](https://img.shields.io/david/optional/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
 [![david peerDependency](https://img.shields.io/david/peer/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
+[![npms score](https://badges.npms.io/logcat-browser.svg)](https://www.npmjs.com/package/logcat-browser)
+[![Known Vulnerabilities](https://snyk.io/test/github/HansHammel/logcat-browser.svg)](https://snyk.io/test/github/HansHammel/logcat-browser)
 
 ## How to start using:
 
