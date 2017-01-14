@@ -1,4 +1,11 @@
-language: node_js
+language: android
+
+android:
+  components:
+  - platform-tools
+  - tools
+  - build-tools-21.1.1
+  - android-21
 
 sudo: false
 
@@ -6,11 +13,6 @@ branches:
   only:
     - master
 
-node_js:
-  - '4'
-  - '5'
-  - '6'
-  - '7'
 os:
   - linux
  
@@ -25,4 +27,15 @@ cache:
     - travis_phantomjs
     - node_modules	
 
-script: 'npm test'
+install:
+  matrix:
+   - nvm install 4
+   - nvm install 5
+   - nvm install 6
+   - nvm install 7
+
+before_script:
+  - npm install
+
+script:
+  - npm test
