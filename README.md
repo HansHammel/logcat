@@ -5,6 +5,7 @@
 [![NPM](https://nodei.co/npm/logcat-browser.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/logcat-browser/) 
 [![NPM](https://nodei.co/npm-dl/logcat-browser.png?months=9&height=3)](https://nodei.co/npm/logcat-browser/)
 
+[![Build Status](https://travis-ci.org/HansHammel/logcat-browser.svg?branch=master)](https://travis-ci.org/HansHammel/logcat-browser)
 [![npm version](https://img.shields.io/npm/v/logcat-browser.svg)](https://www.npmjs.com/package/logcat-browser)
 [![npm license](https://img.shields.io/npm/l/logcat-browser.svg)](https://www.npmjs.com/package/logcat-browser)
 [![npm download](https://img.shields.io/npm/dm/logcat-browser.svg)](https://www.npmjs.com/package/logcat-browser)
