@@ -13,7 +13,6 @@
 [![Inline docs](http://inch-ci.org/github/HansHammel/logcat-browser.svg?branch=master)](http://inch-ci.org/github/HansHammel/logcat-browser)
 [![star this repo](http://githubbadges.com/star.svg?user=HansHammel&repo=logcat-browser&style=flat&color=fff&background=007ec6)](https://github.com/HansHammel/logcat-browser)
 [![fork this repo](http://githubbadges.com/fork.svg?user=HansHammel&repo=logcat-browser&style=flat&color=fff&background=007ec6)](https://github.com/HansHammel/logcat-browser/fork)
-
 [![david dependency](https://img.shields.io/david/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
 [![david devDependency](https://img.shields.io/david/dev/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
 [![david optionalDependency](https://img.shields.io/david/optional/HansHammel/logcat-browser.svg)](https://david-dm.org/HansHammel/logcat-browser)
