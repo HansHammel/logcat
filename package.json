@@ -17,12 +17,15 @@
     "express.oi": "0.0.21",
     "jquery": "^3.1.1",
     "open": "^0.0.5",
-    "which": "^1.2.12"
+    "which": "^1.2.12",
+    "snyk": "^1.316.1"
   },
   "version": "0.2.2",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha test/app.js"
+    "test": "mocha test/app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "mocha": "^3.2.0",
@@ -47,5 +50,6 @@
     "browser",
     "web"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
