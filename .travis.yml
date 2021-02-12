@@ -1,5 +1,6 @@
 language: android
 dist: trusty
+#dist: bionic
 jdk: oraclejdk8
 
 env:
