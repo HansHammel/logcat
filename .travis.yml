@@ -8,6 +8,7 @@ env:
   - ANDROID_API_LEVEL=28
   - ANDROID_BUILD_TOOLS_VERSION=28.0.3
   - ANDROID_ABI=armeabi-v7a
+  - NODE_ENV=testing
 
 git:
   depth: 1
@@ -55,6 +56,11 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     - $HOME/.android/build-cache
+    - $HOME/.npm
+    - ~/.npm
+    - ~/.yarn-cache
+    - travis_phantomjs
+    - node_modules    
 
 before_install:
     #- touch $HOME/.android/repositories.cfg
@@ -82,11 +88,12 @@ script:
    - nvm install --lts
    - npm install -g ionic
    - npm install -g cordova
-   - cd app
-   - npm ci
-   - ionic cordova platform add android
-   - ionic cordova build android
+   - npm test
+  # - npm ci
+  # - ionic cordova platform add android
+  # - ionic cordova build android
   
 branches:
   only:
     - master
+    - /^greenkeeper-.*$/
