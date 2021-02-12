@@ -51,8 +51,8 @@ before_install:
     - yes | sdkmanager "build-tools;28.0.3"
     - export LANG=en_US.UTF-8
 
-before_script:
-  - chmod +x gradlew
+# before_script:
+  # - chmod +x gradlew
 
 script: 
   # See https://austinpray.com/ops/2015/09/20/change-travis-node-version.html
