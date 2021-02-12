@@ -14,9 +14,23 @@ branches:
     - master
     - /^greenkeeper-.*$/
 
+node_js:
+  - '10'
+  - '11'
+  - '12'
+  - '13'
+  - lts/*
+  - node
+
 os:
+  - windows
   - linux
- 
+  - osx
+
+matrix:
+  allow_failures:
+    - os: windows
+    
 env:
   - NODE_ENV=testing
 
@@ -26,17 +40,7 @@ cache:
     - ~/.npm
     - ~/.yarn-cache
     - travis_phantomjs
-    - node_modules	
-
-env:
-  - TRAVIS_NODE_VERSION="4"
-  - TRAVIS_NODE_VERSION="5"
-  - TRAVIS_NODE_VERSION="6"
-  - TRAVIS_NODE_VERSION="7"
-
-install:
-  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
-  - npm install
+    - node_modules
 
 script:
   - npm test
