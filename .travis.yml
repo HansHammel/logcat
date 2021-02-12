@@ -1,0 +1,92 @@
+os: linux
+sudo: required
+jdk: oraclejdk8
+
+
+env:
+  global:
+  - ANDROID_API_LEVEL=28
+  - ANDROID_BUILD_TOOLS_VERSION=28.0.3
+  - ANDROID_ABI=armeabi-v7a
+
+git:
+  depth: 1
+
+dist: xenial
+addons:
+  apt:
+    sources:
+      - sourceline: deb https://dl.yarnpkg.com/debian/ stable main
+        key_url: https://dl.yarnpkg.com/debian/pubkey.gpg
+    packages:
+      - oracle-java8-installer
+      - oracle-java8-set-default
+
+language: android
+
+android:
+  components:
+    - tools
+    - platform-tools-28.0.2
+    # The BuildTools version used by your project
+    - build-tools-28.0.3
+
+    # The SDK version used to compile your project
+    - android-28
+
+    # Additional components
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+
+    # Specify at least one system image,
+    # if you need to run emulator(s) during your tests
+  licenses:
+    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.android/build-cache
+
+before_install:
+    #- touch $HOME/.android/repositories.cfg
+    #- yes | sdkmanager "platforms;android-28"
+    #- yes | sdkmanager "build-tools;28.0.3"
+    - export LANG=en_US.UTF-8
+    
+script: 
+  # See https://austinpray.com/ops/2015/09/20/change-travis-node-version.html
+
+  # Clear out whatever version of NVM Travis has.
+  # Their version of NVM is probably old.
+   - rm -rf ~/.nvm
+
+  # Grab NVM.
+   - git clone https://github.com/creationix/nvm.git ~/.nvm 
+  # Checkout the latest stable tag.
+  # Note that you can just hardcode a preferred version here.
+   - (cd ~/.nvm; git checkout `git describe --abbrev=0 --tags`)
+
+  # Add nvm command available to shell
+   - source ~/.nvm/nvm.sh
+
+  # Install a lts version of Node
+   - nvm install --lts
+   - npm install -g ionic
+   - npm install -g cordova
+   - cd app
+   - npm ci
+   - ionic cordova platform add android
+   - ionic cordova build android
+  
+branches:
+  only:
+    - master
